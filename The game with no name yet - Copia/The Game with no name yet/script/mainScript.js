@@ -15,19 +15,19 @@
                 this.type = t;
                 switch(t){
                     case "camp":
-                        this.imgSrc = "../images/tent1.png"
+                        this.imgSrc = "./The game with no name yet - Copia/images/tent1.png"
                         this.isOcuped = true;
                         break;
                     case "grass":
-                        this.imgSrc = "../images/Design sem nome.png"
+                        this.imgSrc = "./The game with no name yet - Copia/images/Design sem nome.png"
                         this.isOcuped = false;
                         break;
                     case "rocks":
-                        this.imgSrc = "../images/Rocks1.png"
+                        this.imgSrc = "./The game with no name yet - Copia/images/Rocks1.png"
                         this.isOcuped = true;
                         break;
                     default:
-                        this.imgSrc = "../images/Design sem nome.png"
+                        this.imgSrc = "./The game with no name yet - Copia/images/Design sem nome.png"
                         this.isOcuped = false;
                 }
                 switch(n){
