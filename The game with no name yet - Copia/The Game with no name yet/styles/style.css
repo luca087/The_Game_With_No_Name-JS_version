@@ -1,0 +1,45 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+#div-title-1 {
+  background-color: #a6aa56;
+  padding: 20px;
+}
+#div-title-1 h1 {
+  color: #dfdb9c;
+  text-align: center;
+}
+
+#nav-menu {
+  background-color: #b4b969;
+  border-top: 4px dashed #dfdb9c;
+  border-bottom: 4px dashed #dfdb9c;
+  padding: 5px;
+}
+#nav-menu a {
+  margin: 5px;
+  color: #dfdb9c;
+  text-decoration: none;
+  font-size: 20px;
+}
+#nav-menu a :hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+#img-title-1 {
+  width: 50px;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+#table-map {
+  border: 3px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}/*# sourceMappingURL=style.css.map */
