@@ -50,6 +50,31 @@ th{
 }
 #table-map{
     border: 3px solid black;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px;
+    display: inline-block;
+}
+#div-table-map{
+    margin: 10px;
+    height: 600px;
+    width: 600px;
+    border: 2px solid $blue-1;
+    display: inline-block;
+}
+#div-map-settings{
+    margin: 10px;
+    margin-left: 20px;
+    h2{
+        display: inline-block;
+    }
+}
+#img-map-settings{
+    display: inline-block;
+}
+#div-item-info{
+    width: 350px;
+    margin: 10px;
+    display: inline-flex;
+    border: 2px solid $blue-1;
+    height: 600px;
+
 }

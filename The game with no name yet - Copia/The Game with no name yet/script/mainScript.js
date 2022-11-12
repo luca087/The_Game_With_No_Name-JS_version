@@ -78,8 +78,29 @@
             }
             return mapT;
         }
+        visible = true
+        function ShowMapSettings(){
+            
+            if(visible){
+                $("#map-settings").css({
+                    display: "none" 
+                })
+                visible = false
+            }else{
+                $("#map-settings").css({
+                    display: "block" 
+                })
+                visible = true
+            }
+
+        }
+
         img1 = document.getElementById("img-title-1")
-        btnTest = document.getElementById("btn-test")
+
+        $("#img-map-settings").on("click", function(){
+            ShowMapSettings()
+        })
+
         var tableMap1 = createMap(map1)
         var mapTIndex = 0
         for(i=1;i<=5;i++){
