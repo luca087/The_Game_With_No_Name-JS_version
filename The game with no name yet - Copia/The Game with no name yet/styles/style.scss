@@ -5,6 +5,14 @@ $light-blue-1:#96b7a2;
 $blue-1:#829b86;
 $white-1:#dfdb9c;
 
+$light-border-1: 2px solid $blue-1;
+
+@mixin CreateLightBox1 {
+    border: $light-border-1;
+    padding: 10px;
+    width: 960px;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -14,8 +22,7 @@ $white-1:#dfdb9c;
 header{
     margin-bottom: 30px;
 }
-th{
-}
+
 #div-title-1{
     background-color: $green-1;
     padding: 20px;
@@ -29,17 +36,14 @@ th{
     border-top: 4px dashed $white-1;
     border-bottom: 4px dashed $white-1;
     padding: 5px;
-    a{
+    span{
         margin: 5px;
         color: $white-1;
         text-decoration: none;
         font-size: 20px;
         :hover{
             text-decoration: underline;
-            cursor:pointer;
-        }
-        :active{
-            
+            cursor: pointer;
         }
     }
 }
@@ -52,29 +56,99 @@ th{
     border: 3px solid black;
     margin: 20px;
     display: inline-block;
+    th{
+        image-rendering: auto;
+    }
 }
 #div-table-map{
     margin: 10px;
     height: 600px;
     width: 600px;
-    border: 2px solid $blue-1;
+    border: $light-border-1;
     display: inline-block;
 }
 #div-map-settings{
     margin: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
     h2{
         display: inline-block;
+    }
+    #map-settings{
+        @include CreateLightBox1()
     }
 }
 #img-map-settings{
     display: inline-block;
+    margin-left: 10px;
 }
 #div-item-info{
     width: 350px;
     margin: 10px;
-    display: inline-flex;
-    border: 2px solid $blue-1;
+    display: inline-block;
+    border: $light-border-1;
     height: 600px;
-
+    image-rendering: auto;
+    position: absolute;
+    h2{
+        margin: 20px;
+    }
+    p{
+        margin: 15px;
+    }
+    #item-title{
+        font-size: 30px;
+        text-align: center;
+    }
+    #actions-title{
+        border-top: 3px dashed $blue-1;
+        border-bottom: 3px dashed $blue-1;
+        padding: 5px;
+        text-align: center;
+        display: none;
+    }
+}
+.clone-model{
+    display: none;
+}
+#div-inventory{
+    margin: 10px;
+    margin-left: 10px;
+    h2{
+        display: inline-block;
+    } 
+    #inventory{
+        @include CreateLightBox1()
+    }
+    #img-inventory{
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .div-character{
+        width: 70px;
+        border: $light-border-1;
+        margin: 5px;
+        :hover {
+            border-color: black;
+            cursor: pointer;
+            h3{
+                text-decoration: underline;
+            }
+        }
+        
+    }
+}
+#div-players{
+    padding: 10px;
+    margin: 10px;
+    #btn-change-player{
+        border: none;
+        background-color: white;
+        display: inline-block;
+        :hover{
+            background-color: $white-1;
+        }
+    }
+    h2{
+        display: inline-block;
+    }
 }

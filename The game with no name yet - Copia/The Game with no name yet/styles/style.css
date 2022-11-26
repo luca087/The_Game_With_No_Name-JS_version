@@ -22,16 +22,17 @@ header {
   border-bottom: 4px dashed #dfdb9c;
   padding: 5px;
 }
-#nav-menu a {
+#nav-menu span {
   margin: 5px;
   color: #dfdb9c;
   text-decoration: none;
   font-size: 20px;
 }
-#nav-menu a :hover {
+#nav-menu span:hover {
   text-decoration: underline;
   cursor: pointer;
 }
+
 #img-title-1 {
   width: 50px;
   margin-left: 50%;
@@ -42,6 +43,9 @@ header {
   border: 3px solid black;
   margin: 20px;
   display: inline-block;
+}
+#table-map th {
+  image-rendering: auto;
 }
 
 #div-table-map {
@@ -54,20 +58,94 @@ header {
 
 #div-map-settings {
   margin: 10px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 #div-map-settings h2 {
   display: inline-block;
 }
+#div-map-settings #map-settings {
+  border: 2px solid #829b86;
+  padding: 10px;
+  width: 960px;
+}
 
 #img-map-settings {
   display: inline-block;
+  margin-left: 10px;
 }
 
 #div-item-info {
   width: 350px;
   margin: 10px;
-  display: inline-flex;
+  display: inline-block;
   border: 2px solid #829b86;
   height: 600px;
+  image-rendering: auto;
+  position: absolute;
+}
+#div-item-info h2 {
+  margin: 20px;
+}
+#div-item-info p {
+  margin: 15px;
+}
+#div-item-info #item-title {
+  font-size: 30px;
+  text-align: center;
+}
+#div-item-info #actions-title {
+  border-top: 3px dashed #829b86;
+  border-bottom: 3px dashed #829b86;
+  padding: 5px;
+  text-align: center;
+  display: none;
+}
+
+.clone-model {
+  display: none;
+}
+
+#div-inventory {
+  margin: 10px;
+  margin-left: 10px;
+}
+#div-inventory h2 {
+  display: inline-block;
+}
+#div-inventory #inventory {
+  border: 2px solid #829b86;
+  padding: 10px;
+  width: 960px;
+}
+#div-inventory #img-inventory {
+  display: inline-block;
+  margin-left: 10px;
+}
+#div-inventory .div-character {
+  width: 70px;
+  border: 2px solid #829b86;
+  margin: 5px;
+}
+#div-inventory .div-character:hover {
+  border-color: black;
+  cursor: pointer;
+}
+#div-inventory .div-character:hover h3 {
+  text-decoration: underline;
+}
+
+#div-players {
+  padding: 10px;
+  margin: 10px;
+}
+#div-players #btn-change-player {
+  border: none;
+  background-color: white;
+  display: inline-block;
+}
+#div-players #btn-change-player:hover {
+  background-color: #dfdb9c;
+}
+#div-players h2 {
+  display: inline-block;
 }/*# sourceMappingURL=style.css.map */
